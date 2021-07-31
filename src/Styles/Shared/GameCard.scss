@@ -1,0 +1,80 @@
+.gameCardAll {
+  .gameCard {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+    background-image: url(../../Assets/gameCard1.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .gameCard__container {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background: rgba($color: #000000, $alpha: 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.3s linear;
+      button {
+        background: transparent;
+        border: 1px solid white;
+      }
+      button:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
+  .description {
+    margin-top: 20px;
+  }
+}
+
+.gameCard:hover {
+  cursor: pointer;
+  .gameCard__container {
+    opacity: 1;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .gameCardAll {
+    .gameCard {
+      margin-top: 20px;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .gameCardAll {
+    .gameCard {
+      margin-top: 20px;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .gameCardAll {
+    .gameCard {
+      margin-top: 20px;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .gameCardAll {
+    .gameCard {
+      margin-top: 20px;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

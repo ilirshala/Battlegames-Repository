@@ -1,0 +1,302 @@
+.tshirtContainer {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  margin-bottom: 5%;
+  .navSupport {
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5%;
+    color: gray;
+    margin-bottom: 2%;
+    span {
+      color: #3e8bff;
+      font-weight: bold;
+    }
+  }
+  .tshirt__shirts {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -2%;
+    .tshirt__row {
+      width: 15%;
+      height: 450px;
+      .tshirt__col {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid lightgray;
+        margin: auto;
+        border-radius: 5px;
+        transition: 0.3s linear;
+        margin-top: 15px;
+        img {
+          height: 90px;
+          object-fit: contain;
+        }
+      }
+      .tshirt__col:hover {
+        cursor: pointer;
+        border: 1px solid #3e8bff;
+      }
+    }
+    .bigTshirt {
+      width: 40%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4%;
+      img {
+        height: 500px;
+        object-fit: contain;
+      }
+    }
+    .otherShirtContainer {
+      width: 40%;
+      height: auto;
+      margin-right: -15%;
+      h2 {
+        font-weight: 500;
+        margin-bottom: 40px;
+        margin-top: 70px;
+      }
+      .sizeRow {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        margin-bottom: 40px;
+        .sizeCol {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          border: 3px solid lightgrey;
+          display: grid;
+          place-items: center;
+          margin: 0 2px;
+          transition: 0.2s linear;
+          background: none;
+          outline: none;
+          &:hover {
+            cursor: pointer;
+            border: 3px solid blue;
+          }
+          &:focus {
+            border: 3px solid blue;
+          }
+        }
+        .colorPicker {
+          width: 30px;
+          height: 30px;
+          border-radius: 200px;
+          border: 3px solid transparent;
+          display: grid;
+          place-items: center;
+          margin: 0 5px;
+          transition: 0.2s linear;
+          border-spacing: 10px;
+          background: none;
+          outline: none;
+        }
+        .colorPicker:focus {
+          box-shadow: 0 0 0 3pt black;
+        }
+        .colorPicker:nth-child(1) {
+          background-color: #000000;
+        }
+        .colorPicker:nth-child(2) {
+          background-color: #1b4c8f;
+        }
+        .colorPicker:nth-child(3) {
+          background-color: #2b6457;
+        }
+        .colorPicker:nth-child(4) {
+          background-color: #a40200;
+        }
+      }
+      .quantityGrid {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .item1 {
+          width: 40px;
+          height: 35px;
+          border: 1px solid lightgray;
+          display: grid;
+          place-items: center;
+        }
+        .item2 {
+          width: 60px;
+          height: 35px;
+          border: 1px solid lightgray;
+          display: grid;
+          place-items: center;
+        }
+      }
+      .priceProcess {
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        button {
+          width: 180px;
+          img {
+            display: none;
+          }
+          .MuiSvgIcon-root {
+            color: white;
+          }
+        }
+        .MuiSvgIcon-root {
+          color: lightgray;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .tshirtContainer {
+    width: 95%;
+    height: auto;
+    .navSupport {
+      display: none;
+    }
+    .tshirt__shirts {
+      width: 100%;
+      flex-direction: column;
+      .tshirt__row {
+        display: none;
+      }
+      .bigTshirt {
+        width: 95%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 35%;
+        img {
+          height: 300px;
+          object-fit: contain;
+        }
+      }
+    }
+    .otherShirtContainer {
+      width: 95% !important;
+      height: auto;
+      margin-right: 0;
+      margin-left: 2%;
+      .priceProcess {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .tshirtContainer {
+    width: 85%;
+    height: auto;
+    .navSupport {
+      display: none;
+    }
+    .tshirt__shirts {
+      width: 100%;
+      flex-direction: column;
+      .tshirt__row {
+        display: none;
+      }
+      .bigTshirt {
+        width: 95%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 35%;
+        img {
+          height: 300px;
+          object-fit: contain;
+        }
+      }
+    }
+    .otherShirtContainer {
+      width: 95% !important;
+      height: auto;
+      margin-right: 0;
+      margin-left: 2%;
+      .priceProcess {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .tshirtContainer {
+    width: 95%;
+    height: auto;
+    .navSupport {
+      padding-top: 15%;
+    }
+    .tshirt__shirts {
+      .tshirt__row {
+        display: none;
+      }
+      .bigTshirt {
+        width: 35%;
+        img {
+          height: 350px;
+        }
+      }
+    }
+  }
+  .otherShirtContainer {
+    .priceProcess {
+      width: 100% !important;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tshirtContainer {
+    width: 95%;
+    height: auto;
+    .navSupport {
+      padding-top: 15%;
+    }
+    .tshirt__shirts {
+      .tshirt__row {
+        display: none;
+      }
+      .bigTshirt {
+        width: 35%;
+        img {
+          height: 500px;
+        }
+      }
+    }
+  }
+  .otherShirtContainer {
+    .priceProcess {
+      width: 100% !important;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

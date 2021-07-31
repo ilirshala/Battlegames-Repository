@@ -1,0 +1,50 @@
+.allProductsFilter {
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-bottom: 5%;
+  align-items: center;
+  justify-content: space-between;
+  .filters {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    select {
+      height: 42px;
+      width: 120px;
+      border: 1px solid lightgray;
+      color: gray;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+  .sortBy {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .sortBy__others {
+      width: 80px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid lightgray;
+      color: gray;
+      border-radius: 5px;
+      .blueIcon {
+        color: blue;
+      }
+    }
+    select {
+      height: 42px;
+      width: 170px;
+      border: 1px solid lightgray;
+      color: gray;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+}

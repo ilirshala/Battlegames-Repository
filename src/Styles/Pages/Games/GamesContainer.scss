@@ -1,0 +1,59 @@
+.gamesContainer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  margin-bottom: 5%;
+  .gamesContainer__categories {
+    width: 20%;
+    height: auto;
+  }
+  .gamesContainer__right {
+    flex: 1;
+    height: auto;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .gamesContainer {
+    .gamesContainer__categories {
+      display: none;
+    }
+    .gamesContainer__right {
+      width: 100%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .gamesContainer {
+    .gamesContainer__categories {
+      display: none;
+    }
+    .gamesContainer__right {
+      width: 100%;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .gamesContainer {
+    .gamesContainer__categories {
+      display: none;
+    }
+    .gamesContainer__right {
+      width: 100%;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

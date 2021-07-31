@@ -1,0 +1,85 @@
+.testimonialCard {
+  width: 454px;
+  height: 267px;
+  background-color: rgba(23, 0, 105, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.4s linear;
+  text-align: left;
+  .logoPlace {
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
+    background: #175abf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 0;
+    margin-right: -20px;
+    z-index: 300;
+  }
+  p {
+    color: white;
+    font-size: 13px;
+    padding-top: 15%;
+    width: 85%;
+    margin: auto;
+    line-height: 22px;
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-top: 10%;
+    .MuiSvgIcon-root {
+      color: white;
+      margin-right: 25px;
+    }
+    h4 {
+      color: #00b8ff;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.testimonialCard:hover {
+  cursor: pointer;
+
+  border: 1px solid lightgray;
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .testimonialCard {
+    width: 350px;
+    .logoPlace {
+      display: none;
+      overflow-y: auto;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .testimonialCard {
+    width: 350px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .testimonialCard {
+    width: 350px;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

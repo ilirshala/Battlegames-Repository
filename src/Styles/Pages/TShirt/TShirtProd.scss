@@ -1,0 +1,83 @@
+.tshirtProd {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 4%;
+  margin-top: 5%;
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin-top: -2%;
+    margin-left: 5%;
+  }
+  h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 5%;
+  }
+  .rec.rec-arrow {
+    display: none;
+  }
+  .rec.rec-dot {
+    display: none;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .tshirtProd {
+    height: auto;
+    margin-bottom: 10%;
+    .homeSecond__line {
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .tshirtProd {
+    height: auto;
+    margin-bottom: 5%;
+    .homeSecond__line {
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .tshirtProd {
+    height: auto;
+    margin-bottom: 5%;
+    .homeSecond__line {
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tshirtProd {
+    height: auto;
+
+    margin-bottom: 5%;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

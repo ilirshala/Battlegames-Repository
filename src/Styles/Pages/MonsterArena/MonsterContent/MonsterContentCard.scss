@@ -1,0 +1,115 @@
+.monsterContentCard {
+  width: 30%;
+  height: 430px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  .monsterContentCard__bgImage {
+    height: 70%;
+    width: 100%;
+    background-image: url(../../../../Assets/monsterContent1.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -100;
+  }
+  .topBlue {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 30px;
+    position: relative;
+    top: -73%;
+    border-radius: 200px;
+    background-color: #3e8bff;
+    h4 {
+      padding: 5px;
+    }
+  }
+  .downContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px;
+    h4 {
+      margin-right: 20px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .subtitleContentCard {
+      .imgTitle {
+        display: flex;
+        align-items: center;
+        img {
+          margin: 0 15px;
+          margin-right: -15px;
+        }
+      }
+      p {
+        margin-left: 25px;
+      }
+    }
+  }
+  .monsterContentCard__footer {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-family: "Reggae One", cursive;
+    }
+    button {
+      width: 120px;
+      height: 45px;
+      background: none;
+      border: 1px solid #3e8bff;
+      color: #3e8bff;
+      img {
+        display: none;
+      }
+    }
+    button:hover {
+      background: #3e8bff;
+      color: white;
+    }
+  }
+}
+
+.monsterContentCard:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .monsterContentCard {
+    width: 95%;
+    margin-top: 15px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .monsterContentCard {
+    width: 75%;
+    margin-top: 15px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .monsterContentCard {
+    width: 45%;
+    margin-top: 15px;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

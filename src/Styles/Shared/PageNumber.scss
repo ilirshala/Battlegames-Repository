@@ -1,0 +1,230 @@
+.webinarFifth {
+  width: 20%;
+  height: 70px;
+
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .webinarFifth__col {
+    height: 70%;
+    width: 45px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    color: gray;
+    transition: 0.5s linear;
+    p {
+      font-weight: bold;
+      font-size: 17px;
+      margin: 25% -5%;
+    }
+    .MuiSvgIcon-root {
+      margin: 20%;
+      font-size: 30px;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+  .webinarFifth__col:hover {
+    color: #5667ff;
+    border: 3px solid #5667ff;
+    cursor: pointer;
+  }
+  #selected__one {
+    color: #5667ff;
+    border: 3px solid #5667ff;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .webinarFifth {
+    width: 90%;
+    height: 70px;
+
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .webinarFifth__col {
+      height: 50%;
+      width: 40px;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      color: gray;
+      transition: 0.5s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .MuiSvgIcon-root {
+        margin: 10%;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .webinarFifth {
+    width: 90%;
+    height: 70px;
+
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .webinarFifth__col {
+      height: 50%;
+      width: 40px;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      color: gray;
+      transition: 0.5s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .MuiSvgIcon-root {
+        margin: 10%;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .webinarFifth {
+    width: 45%;
+    height: 70px;
+
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .webinarFifth__col {
+      height: 50%;
+      width: 40px;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      color: gray;
+      transition: 0.5s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .MuiSvgIcon-root {
+        margin: 10%;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .webinarFifth {
+    width: 45%;
+    height: 70px;
+
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .webinarFifth__col {
+      height: 70%;
+      width: 45px;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      color: gray;
+      transition: 0.5s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .MuiSvgIcon-root {
+        margin: 20%;
+        font-size: 30px;
+      }
+    }
+    .webinarFifth__col:hover {
+      color: #5667ff;
+      border: 3px solid #5667ff;
+      cursor: pointer;
+    }
+    #selected__one {
+      color: #5667ff;
+      border: 3px solid #5667ff;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+  .webinarFifth {
+    width: 32%;
+    height: 70px;
+
+    margin: auto;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .webinarFifth__col {
+      height: 55%;
+      width: 40px;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      color: gray;
+      transition: 0.5s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .MuiSvgIcon-root {
+        margin: 20%;
+        font-size: 30px;
+      }
+    }
+    .webinarFifth__col:hover {
+      color: #5667ff;
+      border: 3px solid #5667ff;
+      cursor: pointer;
+    }
+    #selected__one {
+      background-color: #5667ff;
+      border: 3px solid #5667ff;
+      color: white;
+    }
+  }
+}

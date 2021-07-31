@@ -1,0 +1,94 @@
+.visualLeft {
+  width: 100%;
+  height: auto;
+  .visualChecks {
+    margin-top: 30px;
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.7);
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+  .jobAlert {
+    width: 100%;
+    height: 375px;
+    background-image: url(../../../Assets/svg/jobAlert.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 200;
+    margin-top: 40px;
+    color: white;
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      padding-top: 30px;
+      margin-left: 50px;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 50px;
+      padding-right: 50px;
+    }
+    .emailInput {
+      width: 75%;
+      margin: auto;
+      height: 60px;
+      margin-top: 60px;
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      .MuiSvgIcon-root {
+        margin: 0 25px;
+      }
+      input {
+        background: none;
+        outline: none;
+        height: 95%;
+        border: none;
+        color: white;
+        font-size: 15px;
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+    .buttonDis {
+      width: 85%;
+      margin: auto;
+      button {
+        width: 88%;
+        height: 60px;
+        margin: auto;
+        margin-top: 30px;
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      width: 86%;
+      height: 100%;
+      top: 0;
+      left: 30px;
+      position: absolute;
+      color: white;
+      background: #010927;
+      opacity: 0.85;
+      z-index: -100;
+      border-radius: 10px;
+    }
+  }
+}

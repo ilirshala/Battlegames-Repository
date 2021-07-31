@@ -1,0 +1,106 @@
+.aboutFifth::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.85;
+  z-index: -100;
+}
+
+.aboutFifth {
+  height: 55vh;
+  background-image: url(../../../Assets/aboutFifthBg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 200;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutFifth__content {
+    width: 25%;
+    height: auto;
+    margin-left: 40%;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    .line {
+      width: 73.52px;
+      height: 10px;
+      background-color: #fff;
+      clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+      margin: auto;
+      margin-top: -2%;
+      margin-left: -0%;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      width: 80%;
+      margin-bottom: 25px;
+    }
+    button {
+      border: 1px solid white;
+      background: none;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .aboutFifth {
+    width: 100%;
+    height: 350px;
+    .aboutFifth__content {
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutFifth {
+    width: 100%;
+    height: 350px;
+    .aboutFifth__content {
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .aboutFifth {
+    width: 100%;
+    height: 350px;
+    .aboutFifth__content {
+      width: 55%;
+      margin: auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,154 @@
+.blogCards {
+  width: 80%;
+  height: 287px;
+  background-image: url(../../../Assets/blogImg.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-top: 20px;
+
+  .blogCards__con {
+    width: 100%;
+    height: 100px;
+    background: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .blogCardsHeader {
+      width: 63%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 10px;
+      margin-top: 2px;
+      margin-left: 15px;
+      .blogCards__date {
+        width: 130px;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #00b8ff;
+        color: white;
+        margin-right: 25px;
+      }
+      p {
+        margin-left: 25px;
+        color: white;
+        font-size: 14px;
+      }
+    }
+    .blogCards__col {
+      width: 90%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 10px;
+      color: white;
+      h3 {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-top: 5px;
+        width: 100%;
+        line-height: 20px;
+      }
+      button {
+        height: 40px;
+        background: #181818;
+        background: -webkit-linear-gradient(bottom, #181818, #010101);
+        background: -moz-linear-gradient(bottom, #181818, #010101);
+        background: linear-gradient(to top, #181818, #010101);
+        border: 1px solid white;
+        margin-top: -10px;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeThird__left {
+    width: 100%;
+    height: 550px;
+    .blogCards__con {
+      height: auto;
+      .blogCards__col {
+        height: auto;
+        flex-direction: column;
+        button {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeThird__left {
+    width: 100%;
+    height: 550px;
+    .blogCards__con {
+      height: auto;
+      .blogCards__col {
+        height: auto;
+        flex-direction: column;
+        button {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeThird__left {
+    width: 100%;
+    height: 550px;
+    .blogCards__con {
+      height: auto;
+      .blogCards__col {
+        height: auto;
+        flex-direction: column;
+        button {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeThird__left {
+    width: 80%;
+    height: 550px;
+    .blogCards__con {
+      height: auto;
+      .blogCards__col {
+        height: auto;
+        flex-direction: column;
+        button {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

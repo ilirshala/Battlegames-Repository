@@ -1,0 +1,201 @@
+.blogContainer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+
+  margin-bottom: 5%;
+  .categories {
+    width: 27%;
+    height: auto;
+  }
+  .blogCardsContainer {
+    width: 55%;
+    height: auto;
+    margin-left: 5%;
+  }
+  .other {
+    width: 30%;
+    height: auto;
+    margin-left: -8%;
+    h2 {
+      visibility: hidden;
+    }
+    .otherCard1 {
+      width: 80%;
+      height: 250px;
+      background-color: red;
+      margin-top: 20px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 200;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h5 {
+        color: white;
+        font-size: 13px;
+      }
+      .otherCard__input {
+        width: 80%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        margin: 30px 0;
+        background: rgba($color: #ffff, $alpha: 0.2);
+        backdrop-filter: blur(20px);
+        .MuiSvgIcon-root {
+          margin: 0 15px;
+          color: white;
+        }
+        input {
+          border: none;
+          background: none;
+          outline: none;
+          flex: 1;
+          color: white;
+        }
+        input::placeholder {
+          color: white;
+        }
+      }
+      button {
+        width: 150px;
+        border-radius: 5px;
+        img {
+          display: none;
+        }
+      }
+    }
+    .otherCard1::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      color: white;
+      background: #010927;
+      opacity: 0.85;
+      z-index: -100;
+      border-radius: 10px;
+    }
+    .otherCard2,
+    .otherCard3 {
+      width: 80%;
+      height: 320px;
+      background-color: red;
+      margin-top: 5px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      h3 {
+        font-family: "Reggae One", cursive;
+        color: white;
+      }
+      img {
+        height: 150px;
+        margin: 20px 0;
+        object-fit: contain;
+      }
+      button {
+        width: 150px;
+        border-radius: 5px;
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .otherCard2::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      color: white;
+      background: #301258;
+      opacity: 0.85;
+      z-index: -100;
+      border-radius: 10px;
+    }
+    .otherCard3::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      color: white;
+      background: #000;
+      opacity: 0.25;
+      z-index: -100;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .blogContainer {
+    .categories {
+      display: none;
+    }
+    .blogCardsContainer {
+      width: 100%;
+    }
+    .other {
+      display: none;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .blogContainer {
+    .categories {
+      display: none;
+    }
+    .blogCardsContainer {
+      width: 100%;
+    }
+    .other {
+      display: none;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .blogContainer {
+    .categories {
+      display: none;
+    }
+    .blogCardsContainer {
+      width: 100%;
+    }
+    .other {
+      display: none;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

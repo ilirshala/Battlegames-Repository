@@ -1,0 +1,94 @@
+.monsterNewsContainer {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: -2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .monsterNews__row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  button {
+    margin: 40px auto;
+    img {
+      display: none;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .monsterNewsContainer {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 1.8rem;
+    }
+    .monsterNews__row {
+      flex-direction: column;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .monsterNewsContainer {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 1.8rem;
+    }
+    .monsterNews__row {
+      flex-direction: column;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .monsterNewsContainer {
+    width: 95%;
+    height: auto;
+    h1 {
+      font-size: 1.8rem;
+    }
+    .monsterNews__row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .monsterNewsContainer {
+    width: 95%;
+    height: auto;
+    h1 {
+      font-size: 1.8rem;
+    }
+    .monsterNews__row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

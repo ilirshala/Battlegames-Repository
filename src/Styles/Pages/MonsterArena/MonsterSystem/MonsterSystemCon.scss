@@ -1,0 +1,188 @@
+.monsterSystemCon {
+  width: 100%;
+  height: 70vh;
+  margin-top: -3%;
+
+  margin-bottom: 20%;
+  .monsterSystems__header {
+    width: 100%;
+    height: 200px;
+    background-color: #122558;
+    color: white;
+    padding-top: 30px;
+    .homeSecond__line {
+      width: 73.52px;
+      height: 10px;
+      background-color: #00b8ff;
+      clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+      margin: auto;
+    }
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    .systemChoice {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      .activeH {
+        color: white;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        color: gray;
+      }
+      h2:hover {
+        cursor: pointer;
+      }
+    }
+    .macBr {
+      width: 40%;
+      margin: auto;
+      height: 2px;
+      background: linear-gradient(90deg, rgb(100, 100, 100) 50%, #3e8bff 50%);
+      transition: 0.5s ease-in-out;
+      margin-top: 3%;
+      border: none;
+    }
+    .windowsBr {
+      width: 40%;
+      margin: auto;
+      height: 2px;
+      background: linear-gradient(90deg, #3e8bff 50%, rgb(100, 100, 100) 50%);
+      transition: 0.5s ease-in-out;
+      margin-top: 3%;
+      border: none;
+    }
+  }
+  .monsterSystem__container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    background: #122558;
+    opacity: 0.95;
+    z-index: -100;
+  }
+  .monsterSystem__container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../Assets/systemsBg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -100;
+    color: white;
+
+    h2 {
+      padding-top: 20px;
+      margin-left: 10%;
+      font-weight: 500;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .monsterSystemCon {
+    width: 100%;
+    height: auto;
+    .monsterSystems__header {
+      .systemChoice {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        .activeH {
+          color: white;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 20px;
+          color: gray;
+        }
+        h2:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .monsterSystemCon {
+    width: 100%;
+    height: auto;
+    .monsterSystems__header {
+      .systemChoice {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        .activeH {
+          color: white;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 20px;
+          color: gray;
+        }
+        h2:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .monsterSystemCon {
+    width: 100%;
+    height: auto;
+
+    .monsterSystems__header {
+      .systemChoice {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        .activeH {
+          color: white;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 20px;
+          color: gray;
+        }
+        h2:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .monsterSystemCon {
+    height: auto;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

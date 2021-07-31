@@ -1,0 +1,59 @@
+.homeFourth {
+  height: 1000px;
+  background-image: url(../../../Assets/homeFourthBg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+  z-index: 200;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.homeFourth::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.85;
+  z-index: -100;
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeFourth {
+    width: 100%;
+    height: 250vh;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeFourth {
+    width: 100%;
+    height: 250vh;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeFourth {
+    width: 100%;
+    height: 250vh;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

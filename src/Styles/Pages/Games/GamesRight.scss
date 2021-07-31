@@ -1,0 +1,73 @@
+.gamesRight {
+  width: 95%;
+  height: auto;
+  margin-left: 1%;
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin-top: -2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .gamesRight__row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .loadMore {
+    margin: 50px auto;
+    img {
+      display: none;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .gamesRight {
+    width: 100%;
+    .gamesRight__row {
+      flex-direction: column;
+      margin: auto;
+    }
+    .loadMore {
+      margin-top: 70px;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .gamesRight {
+    width: 100%;
+    .gamesRight__row {
+      flex-direction: column;
+      margin: auto;
+    }
+    .loadMore {
+      margin-top: 90px;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

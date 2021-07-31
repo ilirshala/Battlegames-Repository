@@ -1,0 +1,149 @@
+.forumsCard::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: rgba($color: #000000, $alpha: 0.3);
+  z-index: -100;
+  border-radius: 10px;
+}
+
+.forumsCard {
+  width: 32%;
+  height: 350px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 200;
+  color: white;
+  background-image: url(../../../Assets/monsterContent1.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.3s linear;
+  opacity: 1;
+  .forumsCardTitle {
+    margin: auto;
+    z-index: -100;
+    h3 {
+      text-align: center;
+      position: absolute;
+      top: 70%;
+      font-weight: 500;
+      left: 17%;
+    }
+  }
+  .forumsCard__container {
+    width: 87%;
+    height: 88%;
+    border-radius: 10px;
+    background: rgba($color: #000000, $alpha: 0.7);
+    padding: 20px;
+    padding-top: 20px;
+    opacity: 0;
+    transition: 0.3s linear;
+    z-index: 200;
+    .forumsCardCon__header {
+      width: 90%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      .logoPlace {
+        width: 50px;
+        height: 50px;
+        border-radius: 200px;
+        background: #175abf;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-top: 0;
+        margin-right: -20px;
+        z-index: 300;
+        img {
+          height: 30px;
+          object-fit: contain;
+        }
+      }
+      h4 {
+        font-weight: 500;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 23px;
+    }
+    .forumsCard__views {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          margin-top: 0;
+          font-size: 13px;
+          margin-right: 5px;
+        }
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.forumsCard:hover {
+  cursor: pointer;
+  .forumsCardTitle {
+    h3 {
+      display: none;
+    }
+  }
+  .forumsCard__container {
+    opacity: 1;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .forumsCard {
+    width: 95%;
+    margin-top: 15px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .forumsCard {
+    width: 75%;
+    margin-top: 15px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .forumsCard {
+    width: 45%;
+    margin-top: 15px;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .forumsCard {
+    width: 47%;
+    margin-top: 15px;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

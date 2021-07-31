@@ -1,0 +1,18 @@
+.shopSecondCard {
+  width: 400px;
+  height: 350px;
+  text-align: center;
+  padding-bottom: 30px;
+  img {
+    width: 100%;
+  }
+  p {
+    margin: 15px 0;
+  }
+  button {
+    margin: auto;
+    img {
+      display: none;
+    }
+  }
+}

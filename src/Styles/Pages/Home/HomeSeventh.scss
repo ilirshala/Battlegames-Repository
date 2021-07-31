@@ -1,0 +1,121 @@
+.homeSeventh {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: -2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .homeSeventh__row1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homeSeventh__row2 {
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .myButtonCard {
+    margin: auto;
+    margin-top: 70px;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeSeventh {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeSeventh__row1,
+    .homeSeventh__row2 {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeSeventh {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeSeventh__row1,
+    .homeSeventh__row2 {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeSeventh {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeSeventh__row1,
+    .homeSeventh__row2 {
+      width: 80%;
+      height: auto;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeSeventh {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeSeventh__row1,
+    .homeSeventh__row2 {
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,163 @@
+.gameMenu {
+  width: 100%;
+  height: 100%;
+
+  ul {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 25px;
+    .gameList1 {
+      background-image: url(../../Assets/gameList1.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList2 {
+      background-image: url(../../Assets/gameList2.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList3 {
+      background-image: url(../../Assets/gameList3.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList4 {
+      background-image: url(../../Assets/gameList4.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList5 {
+      background-image: url(../../Assets/gameList5.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList6 {
+      background-image: url(../../Assets/gameList6.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .gameList7 {
+      background-image: url(../../Assets/gameList7.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    a {
+      text-decoration: none;
+      width: 290px;
+      height: 80px;
+      li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        border: 1px solid white;
+        transition: 0.3s linear;
+        z-index: 200;
+        position: relative;
+        p {
+          font-size: 12px;
+        }
+        h4 {
+          font-size: 10px;
+          font-family: "Reggae One", cursive;
+        }
+        h3 {
+          font-size: 15px;
+          font-family: "Indie Flower", cursive;
+        }
+        img {
+          height: 30px;
+          object-fit: contain;
+        }
+      }
+    }
+    li {
+      width: 290px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      border: 1px solid white;
+      transition: 0.3s linear;
+      z-index: 200;
+      position: relative;
+      p {
+        font-size: 12px;
+      }
+      h4 {
+        font-size: 10px;
+        font-family: "Reggae One", cursive;
+      }
+      h3 {
+        font-size: 15px;
+        font-family: "Indie Flower", cursive;
+      }
+      img {
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+    li::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      color: white;
+      background: #010927;
+      opacity: 1;
+      z-index: -100;
+      transition: 0.3s linear;
+    }
+    li:hover {
+      cursor: pointer;
+      border: 1px solid #00b8ff;
+    }
+    li:hover:before {
+      opacity: 0.61;
+    }
+  }
+  .moreGames {
+    width: 35%;
+    height: auto;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      background: none;
+      height: 35px;
+      width: 170px;
+      .MuiSvgIcon-root {
+        color: #00b8ff;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */

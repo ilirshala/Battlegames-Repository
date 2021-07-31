@@ -1,0 +1,18 @@
+.gamesCategories {
+  .category__one {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    h3 {
+      font-weight: 500;
+      margin-left: 10px;
+      margin-bottom: 25px;
+    }
+    label {
+      margin-left: 10px;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.5);
+      margin-left: 10px;
+    }
+  }
+}

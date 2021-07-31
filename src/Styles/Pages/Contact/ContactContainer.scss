@@ -1,0 +1,220 @@
+.contactContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.95;
+  z-index: -100;
+}
+
+.contactContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../Assets/contactContainer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 200;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  .contactForm {
+    width: 45%;
+    height: 600px;
+    background: rgba($color: #000000, $alpha: 0.3);
+    border-radius: 5px;
+    margin-top: 60px;
+    text-align: center;
+    .contactHeader {
+      width: 170px;
+      height: 50px;
+      background-image: url(../../../Assets/svg/loginBg.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: -15px;
+      h4 {
+        margin-top: -10px;
+        font-weight: 500;
+      }
+    }
+    p {
+      font-size: 12px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      width: 80%;
+
+      text-align: left;
+      span {
+        a {
+          color: #3e8bff;
+          text-decoration: none;
+        }
+      }
+    }
+    .descriptionInput {
+      width: 80%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      background: rgba($color: #ffffff, $alpha: 0.2);
+      margin: auto;
+      margin-top: 25px;
+      color: white;
+      textarea {
+        width: 85%;
+        height: 50%;
+        padding: 0 20px;
+        color: white;
+        background: none;
+        outline: none;
+        border: none;
+      }
+      .attachFile {
+        height: 20px;
+        width: 100%;
+        border-top: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        .MuiSvgIcon-root {
+          margin: 35px 10px 0 10px;
+        }
+        input {
+          color: transparent;
+          margin-top: 35px;
+        }
+        input::-webkit-file-upload-button {
+          display: none;
+          color: transparent;
+        }
+        input::before {
+          content: "Attach File or drop files here";
+          display: inline-block;
+          background: linear-gradient(top, #f9f9f9, #e3e3e3);
+          border-radius: 3px;
+          outline: none;
+          white-space: nowrap;
+          -webkit-user-select: none;
+          cursor: pointer;
+          text-shadow: 1px 1px #fff;
+          font-weight: 500;
+          font-size: 12px;
+        }
+      }
+    }
+    .contactInput,
+    select {
+      width: 80%;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      background: rgba($color: #ffffff, $alpha: 0.2);
+      margin: auto;
+      margin-top: 25px;
+      color: white;
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        height: 35px;
+        width: 70%;
+        color: white;
+      }
+      option {
+        color: black;
+      }
+      input::placeholder {
+        color: white;
+      }
+      .MuiSvgIcon-root {
+        color: gray;
+        margin: 0 15px;
+      }
+    }
+    button {
+      margin: auto;
+      width: 70%;
+      height: 35px;
+      margin-top: 15px;
+      color: white;
+      font-weight: 500;
+      background: #3e8bff;
+      outline: none;
+      border: 2px solid transparent;
+      text-transform: uppercase;
+      transition: 0.4s linear;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid #3e8bff;
+        color: #3e8bff;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .contactContainer {
+    height: 120vh;
+    .contactHeader {
+      margin-top: 15%;
+    }
+    .contactForm {
+      width: 95%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .contactContainer {
+    height: auto;
+    .contactForm {
+      margin-top: 15%;
+      margin-bottom: 15%;
+      width: 60%;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contactContainer {
+    height: auto;
+    .contactForm {
+      margin-top: 15%;
+      margin-bottom: 15%;
+      width: 60%;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

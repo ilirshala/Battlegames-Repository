@@ -1,0 +1,55 @@
+.homeSixth::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.85;
+  z-index: -100;
+}
+
+.homeSixth {
+  height: auto;
+  background-image: url(../../../Assets/testimonialBg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+  z-index: 200;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  h1 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 2%;
+  }
+  .homeSixth__row {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    .rec.rec-dot {
+      display: none;
+    }
+  }
+  .myButton {
+    margin: auto;
+    background: transparent;
+    border: 1px solid white;
+    margin-top: 30px;
+    img {
+      display: none;
+    }
+  }
+}

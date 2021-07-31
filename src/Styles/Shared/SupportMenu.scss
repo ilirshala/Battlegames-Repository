@@ -1,0 +1,38 @@
+.supportMenu {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        height: 40px;
+        margin-top: 10px;
+        transition: 0.3s linear;
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+      .MuiSvgIcon-root {
+        margin-left: 10px;
+      }
+    }
+    li {
+      a:hover {
+        background: white;
+        color: black;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

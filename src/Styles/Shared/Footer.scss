@@ -1,0 +1,377 @@
+.footerHeader {
+  width: 100%;
+  height: 250px;
+  background-image: url(../../Assets/footerHeader.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 200;
+  position: relative;
+  color: white;
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+}
+.footerHeader::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #0a0d17;
+  opacity: 0.85;
+  z-index: -100;
+}
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #0a0d17;
+  color: white;
+  position: relative;
+  .footer__container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    .footer__left {
+      width: 40%;
+      padding-top: 5%;
+      .footerLogo {
+        display: flex;
+        align-items: center;
+        h3 {
+          margin-left: 15px;
+        }
+      }
+      p {
+        font-size: 13px;
+        width: 85%;
+        margin-top: 15px;
+        line-height: 22px;
+      }
+      .footerInput {
+        width: 80%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        margin-top: 20px;
+        .MuiSvgIcon-root {
+          color: lightgray;
+          margin: 0 15px;
+        }
+        input {
+          border: none;
+          outline: none;
+          background: none;
+          color: lightgray;
+          margin-left: -60px;
+        }
+        input::placeholder {
+          color: lightgray;
+        }
+        button {
+          float: right;
+          background-color: #0c2d60;
+        }
+      }
+    }
+    .footer__right {
+      width: 60%;
+      height: auto;
+      padding-top: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .MuiSvgIcon-root {
+          display: none;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: 14px;
+          height: 40px;
+          transition: 0.3s linear;
+          a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s linear;
+          }
+        }
+        li:hover {
+          cursor: pointer;
+          color: gray;
+          a {
+            cursor: pointer;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  .footerDown {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .copyright {
+      width: 30%;
+      height: auto;
+      margin-left: -5%;
+      p {
+        padding: 10px;
+      }
+    }
+    .languages {
+      margin-right: -5%;
+      .menu-flags {
+        border: 1px solid white;
+        border-radius: 10px;
+        ul {
+          margin-top: -220px;
+          background-color: #0a0d17;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footer__container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      .footer__left {
+        width: 100%;
+        padding-top: 5%;
+        .footerLogo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        p {
+          font-size: 11px;
+          width: 80%;
+
+          line-height: 22px;
+          margin: auto;
+          margin-top: 15px;
+        }
+        .footerInput {
+          width: 80%;
+          height: 45px;
+          margin: auto;
+          margin-top: 20px;
+          input {
+            margin-left: 0;
+            width: 70%;
+          }
+          button {
+            width: 80px;
+          }
+        }
+      }
+      .footer__right {
+        width: 100%;
+        flex-direction: column;
+        h4 {
+          width: 100%;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+  .footerDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .copyright {
+      width: 95% !important;
+      text-align: center;
+      margin-left: 1% !important;
+    }
+    .languages {
+      width: 100%;
+      margin-right: 7% !important;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footer__container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      .footer__left {
+        width: 100%;
+        padding-top: 5%;
+        .footerLogo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        p {
+          font-size: 11px;
+          width: 80%;
+
+          line-height: 22px;
+          margin: auto;
+          margin-top: 15px;
+        }
+        .footerInput {
+          width: 80%;
+          height: 45px;
+          margin: auto;
+          margin-top: 20px;
+          input {
+            margin-left: 0;
+            width: 70%;
+          }
+          button {
+            width: 80px;
+          }
+        }
+      }
+      .footer__right {
+        width: 100%;
+        flex-direction: column;
+        h4 {
+          width: 100%;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+  .footerDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .copyright {
+      width: 95% !important;
+      text-align: center;
+      margin-left: 1% !important;
+    }
+    .languages {
+      width: 100%;
+      margin-right: 7% !important;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footer__container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      .footer__left {
+        width: 100%;
+        padding-top: 5%;
+        .footerLogo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        p {
+          font-size: 11px;
+          width: 80%;
+
+          line-height: 22px;
+          margin: auto;
+          margin-top: 15px;
+        }
+        .footerInput {
+          width: 80%;
+          height: 45px;
+          margin: auto;
+          margin-top: 20px;
+          input {
+            margin-left: 0;
+            width: 70%;
+          }
+          button {
+            width: 80px;
+          }
+        }
+      }
+      .footer__right {
+        width: 80%;
+        flex-direction: row;
+        h4 {
+          width: 100%;
+          .MuiSvgIcon-root {
+            display: none;
+          }
+        }
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer {
+    .footer__container {
+      .footer__left {
+        .footerInput {
+          input {
+            width: 70%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) and (max-width: 2000px) {
+  .footer {
+    height: auto;
+    .footerDown {
+    }
+  }
+}
+@media (min-width: 2000px) {
+  .footer {
+    height: auto;
+  }
+}

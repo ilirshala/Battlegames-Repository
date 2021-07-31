@@ -1,0 +1,36 @@
+export const windowsList = [
+  {
+    minimumSystem: "WINDOWS® 7, 8, 8.1, 10 (64-bit required)",
+    minimumCpu: "Intel® Core™ i5-4460, 3.20GHz or AMD FX™-6300",
+    minimumMemory: "8 GB RAM",
+    minimumGraphics: "NVIDIA® GeForce® GTX 760",
+    minimumNetwork: "Broadband Internet connection",
+    minimumStorage: "48 GB available space",
+    minimumSound: "DirectSound (DirectX® 9.0c)",
+    recomendedSys: "WINDOWS® 7, 8, 8.1, 10 (64-bit required)",
+    recomendedCpu: "AMD Ryzen™ 5 1500X",
+    recomendedMemory: "8 GB RAM",
+    recomendedNetwork: "Broadband Internet connection",
+    recomendedGraphics: "NVIDIA® GeForce® GTX 1060 (VRAM 3GB)",
+    recomendedStorage: "48 GB available space",
+    recomendedSound: "DirectSound (DirectX® 9.0c)",
+  },
+];
+export const macList = [
+  {
+    minimumSystem: "OS X® 10.12 (latest version)",
+    minimumCpu: "Intel® Core™ i5 or better",
+    minimumMemory: "8 GB RAM",
+    minimumGraphics: "NVIDIA® GeForce® GT 640 or AMD Radeon™ ",
+    minimumNetwork: "Broadband Internet connection",
+    minimumStorage: "20 GB available hard drive space",
+    minimumSound: "DirectSound (DirectX® 9.0c)",
+    recomendedSys: "macOS® 10.14 (latest version)",
+    recomendedCpu: "Intel® Core™ i5 or better",
+    recomendedMemory: "8 GB RAM",
+    recomendedNetwork: "Broadband Internet connection",
+    recomendedGraphics: "AMD Radeon™ R9 M395X",
+    recomendedStorage: "20 GB available hard drive space",
+    recomendedSound: "DirectSound (DirectX® 9.0c)",
+  },
+];

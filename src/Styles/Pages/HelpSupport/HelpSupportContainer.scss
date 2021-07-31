@@ -1,0 +1,253 @@
+.helpSupportContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.95;
+  z-index: -100;
+}
+
+.helpSupportContainer {
+  width: 100%;
+  height: 130vh;
+  background-image: url(../../../Assets/helpSupport.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 200;
+  position: relative;
+  color: white;
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .navSupport {
+    padding-top: 6%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5%;
+    color: gray;
+  }
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #fff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: 1%;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .searchInput {
+    width: 55%;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba($color: #000000, $alpha: 0.2);
+    .MuiSvgIcon-root {
+      font-size: 35px;
+      color: white;
+      margin-left: 25px;
+    }
+    input {
+      width: 70%;
+      height: 50px;
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    input::placeholder {
+      color: white;
+      font-weight: bold;
+    }
+    button {
+      height: 55px;
+      img {
+        display: none;
+      }
+    }
+  }
+  .helpSupport__row {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #trending {
+    margin-top: 50px;
+  }
+  .topicLists {
+    width: 60%;
+    height: auto;
+    display: flex;
+    color: white;
+    margin: auto;
+    justify-content: space-between;
+    ul {
+      h4 {
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 8px;
+      }
+      list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        height: 35px;
+        .MuiSvgIcon-root {
+          color: #3e8bff;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .helpSupportContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    .navSupport {
+      padding-top: 25%;
+      padding-left: 0;
+      justify-content: center;
+    }
+    .homeSecond__line {
+      margin-top: 10%;
+    }
+    .searchInput {
+      width: 95%;
+    }
+    .helpSupport__row {
+      width: 100%;
+      flex-direction: column;
+    }
+    .topicLists {
+      width: 95%;
+      flex-direction: column;
+      ul {
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .helpSupportContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    .navSupport {
+      padding-top: 25%;
+      padding-left: 0;
+      justify-content: center;
+    }
+    .homeSecond__line {
+      margin-top: 10%;
+    }
+    .searchInput {
+      width: 95%;
+    }
+    .helpSupport__row {
+      width: 100%;
+      flex-direction: column;
+    }
+    .topicLists {
+      width: 95%;
+      flex-direction: column;
+      ul {
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .helpSupportContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    .navSupport {
+      padding-top: 12%;
+      padding-left: 0;
+      justify-content: center;
+    }
+    .homeSecond__line {
+      margin-top: 4%;
+    }
+    .searchInput {
+      width: 75%;
+    }
+    .helpSupport__row {
+      width: 70%;
+      flex-wrap: wrap;
+    }
+    .topicLists {
+      width: 85%;
+      flex-wrap: wrap;
+      ul {
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .helpSupportContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    .navSupport {
+      padding-top: 12%;
+      padding-left: 0;
+      justify-content: center;
+    }
+    .homeSecond__line {
+      margin-top: 4%;
+    }
+    .searchInput {
+      width: 75%;
+    }
+    .helpSupport__row {
+      width: 70%;
+      flex-wrap: wrap;
+    }
+    .topicLists {
+      width: 85%;
+      flex-wrap: wrap;
+      ul {
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

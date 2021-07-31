@@ -1,0 +1,164 @@
+.careerFifth {
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  .careerFifth__left {
+    width: 42%;
+    height: 370px;
+    border-radius: 10px;
+    background-image: url(../../../Assets/careerFifthImg.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    img {
+      height: 100px;
+      object-fit: contain;
+      position: relative;
+      top: 10%;
+      left: 90%;
+    }
+  }
+  .careerFifth__right {
+    width: 45%;
+    height: auto;
+    .careerSecond__line {
+      width: 73.52px;
+      height: 10px;
+      background-color: #00b8ff;
+      clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+      margin-top: 2%;
+      margin-bottom: 4%;
+    }
+    h1 {
+      margin-bottom: 4%;
+      font-weight: 500;
+    }
+    p {
+      font-size: 17px;
+      width: 85%;
+      line-height: 24px;
+    }
+    button {
+      margin-top: 20px;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .careerFifth {
+    width: 100%;
+    flex-direction: column;
+    .careerFifth__left {
+      width: 95%;
+      height: 250px;
+      margin: auto;
+      img {
+        height: 80px;
+        top: -20%;
+        left: -5%;
+      }
+    }
+    .careerFifth__right {
+      width: 95%;
+      margin: auto;
+      margin-bottom: 10%;
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+      .careerSecond__line {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .careerFifth {
+    width: 100%;
+    flex-direction: column;
+    .careerFifth__left {
+      width: 75%;
+      height: 250px;
+      margin: auto;
+      img {
+        height: 80px;
+        top: -20%;
+        left: -5%;
+      }
+    }
+    .careerFifth__right {
+      width: 85%;
+      margin: auto;
+      margin-bottom: 10%;
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+      .careerSecond__line {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .careerFifth {
+    width: 100%;
+    flex-direction: column;
+    .careerFifth__left {
+      width: 55%;
+      height: 300px;
+      margin: auto;
+      img {
+        height: 110px;
+        top: 68%;
+        left: -5%;
+      }
+    }
+    .careerFifth__right {
+      width: 65%;
+      margin: auto;
+      margin-bottom: 10%;
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+      .careerSecond__line {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .careerFifth {
+    width: 95%;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

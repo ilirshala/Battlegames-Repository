@@ -1,0 +1,163 @@
+.forumTweets {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 10px 10px 0 0;
+  margin-top: 20px;
+  .forumTweets__header {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    background: #5da9dd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 25px;
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-left: 5%;
+    }
+    .MuiSvgIcon-root {
+      margin-right: 5%;
+    }
+  }
+  .tweetsDetails {
+    padding: 20px;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    .logoPlace {
+      width: 50px;
+      height: 50px;
+      border-radius: 200px;
+      background: #175abf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+    h5 {
+      margin: 0 10px;
+      font-size: 15px;
+    }
+    .MuiSvgIcon-root {
+      margin-right: 10px;
+      color: #5da9dd;
+    }
+    span {
+      color: gray;
+    }
+  }
+  p {
+    padding: 0 20px;
+    font-size: 14px;
+    margin-left: 15%;
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+  .postDetails {
+    width: 85%;
+    height: 120px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    img {
+      height: 100%;
+      width: 40%;
+      border-radius: 10px;
+    }
+    div {
+      padding: 30px;
+      h5 {
+        margin-top: -10px;
+      }
+      p {
+        margin: 0;
+        font-size: 12px;
+
+        margin: 15px 0;
+        margin-left: -17px;
+      }
+      h4 {
+        font-size: 13px;
+        font-weight: normal;
+        color: gray;
+      }
+    }
+  }
+  .postLikes {
+    width: 85%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+      .MuiSvgIcon-root {
+        color: lightgray;
+        margin: 0 15px;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 13px;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .forumTweets {
+    .postDetails {
+      width: 95%;
+      height: 140px;
+      div {
+        padding: 30px;
+        h5 {
+          width: 80%;
+          margin-top: -10px;
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+
+          margin: 15px 0;
+          margin-left: -17px;
+        }
+        h4 {
+          font-size: 12px;
+          font-weight: normal;
+          color: gray;
+          width: 60%;
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,21 @@
+.blogHeader {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  background-image: url(../../../Assets/blogHeader.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .title {
+    width: 100%;
+    height: 60px;
+    background: rgba($color: #000000, $alpha: 0.5);
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

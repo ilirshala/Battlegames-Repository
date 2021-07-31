@@ -1,0 +1,31 @@
+.monsterSixth {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: 2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .monsterSixth__row {
+    width: 100%;
+    height: auto;
+    .rec.rec-arrow {
+      background-color: #08111f;
+    }
+    .rec.rec-dot {
+      display: none;
+    }
+  }
+}

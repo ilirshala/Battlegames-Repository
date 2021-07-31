@@ -1,0 +1,147 @@
+.signupPage::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.9;
+  z-index: -100;
+}
+
+.signupPage {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../../../Assets/signupBg.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  .signupLogo {
+    width: 400px;
+    text-align: center;
+    a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+  .signupFormContainer {
+    width: 32%;
+    height: 550px;
+    background: rgba($color: #000000, $alpha: 0.3);
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    .signupHeader {
+      width: 170px;
+      height: 50px;
+      background-image: url(../../../Assets/svg/loginBg.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: -15px;
+      h4 {
+        margin-top: -10px;
+        font-weight: 500;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      text-align: center;
+      span {
+        a {
+          color: #3e8bff;
+          text-decoration: none;
+        }
+      }
+    }
+    .signupInput {
+      width: 80%;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      background: rgba($color: #ffffff, $alpha: 0.2);
+      margin: 25px auto;
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        height: 35px;
+        width: 70%;
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+      }
+      .MuiSvgIcon-root {
+        color: gray;
+        margin: 0 15px;
+      }
+    }
+    button {
+      margin: auto;
+      width: 80%;
+      height: 45px;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .signupPage {
+    height: 100vh;
+    .signupHeader {
+      margin-top: 15%;
+    }
+    .signupFormContainer {
+      width: 95%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .signupPage {
+    .signupFormContainer {
+      width: 50%;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

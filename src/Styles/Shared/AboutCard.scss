@@ -1,0 +1,63 @@
+.aboutCard {
+  width: 280px;
+  height: 350px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.4s linear;
+  img {
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  hr {
+    width: 70px;
+    height: 3px;
+    border: none;
+    background: #122558;
+    margin: auto;
+  }
+  h3 {
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 14px;
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: gray;
+    line-height: 22px;
+  }
+}
+.aboutCard:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .aboutCard {
+    margin-top: 20px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutCard {
+    margin-top: 20px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

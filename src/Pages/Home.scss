@@ -1,0 +1,16 @@
+div {
+  .control-arrow,
+  control-prev {
+    &:hover {
+      background-color: red;
+    }
+  }
+  .control-dots {
+    bottom: 150px !important;
+    .dot {
+      background: #3e8bff !important;
+      height: 12px !important;
+      width: 12px !important;
+    }
+  }
+}

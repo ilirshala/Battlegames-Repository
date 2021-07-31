@@ -1,0 +1,200 @@
+.monsterFourth {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5%;
+  .monsterFourth__left {
+    width: 45%;
+    height: auto;
+    h1 {
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    p {
+      width: 663px;
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 28px;
+    }
+  }
+  .monsterFourth__right {
+    width: 716px;
+    height: 489px;
+    background-color: #3e8bff;
+    border-radius: 10px;
+    margin-left: 5%;
+    .monsterFourthContainer {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 10px;
+      margin-top: -10px;
+      margin-left: -10px;
+      transition: 0.3s linear;
+      ul {
+        list-style: none;
+        width: 100%;
+        padding: 20px;
+        padding-left: 50px;
+        li {
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 45px;
+          padding: 10px 0;
+          h3 {
+            font-size: 18px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .monsterFourthContainer:hover {
+      cursor: pointer;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .monsterFourth {
+    width: 100%;
+    flex-direction: column;
+    .monsterFourth__left {
+      width: 95%;
+      margin: 30px auto;
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
+    }
+    .monsterFourth__right {
+      width: 95%;
+      margin-left: 0;
+      .monsterFourthContainer {
+        ul {
+          width: 95%;
+          li {
+            p {
+              font-size: 14px;
+            }
+          }
+          li:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .monsterFourth {
+    width: 100%;
+    flex-direction: column;
+    .monsterFourth__left {
+      width: 95%;
+      margin: 30px auto;
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
+    }
+    .monsterFourth__right {
+      width: 95%;
+      margin-left: 0;
+      .monsterFourthContainer {
+        ul {
+          width: 95%;
+          li {
+            p {
+              font-size: 14px;
+            }
+          }
+          li:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .monsterFourth {
+    width: 100%;
+    flex-direction: column;
+    .monsterFourth__left {
+      width: 95%;
+      margin: 30px auto;
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
+    }
+    .monsterFourth__right {
+      width: 95%;
+      margin-left: 0;
+      .monsterFourthContainer {
+        ul {
+          width: 95%;
+          li {
+            p {
+              font-size: 14px;
+            }
+          }
+          // li:nth-child(2) {
+          //   display: none;
+          // }
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .monsterFourth {
+    width: 100%;
+    flex-direction: column;
+    .monsterFourth__left {
+      width: 75%;
+      margin: 30px auto;
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
+    }
+    .monsterFourth__right {
+      width: 75%;
+      margin-left: 0;
+      .monsterFourthContainer {
+        ul {
+          width: 95%;
+          li {
+            p {
+              font-size: 14px;
+            }
+          }
+          // li:nth-child(2) {
+          //   display: none;
+          // }
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,73 @@
+.homeCard {
+  width: 390px;
+  height: 327px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  background-image: url(../../Assets/homeCard1.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  h4 {
+    padding-top: 30%;
+    padding-left: 8%;
+    font-weight: 600;
+  }
+  p {
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 90%;
+    padding-left: 8%;
+  }
+
+  button {
+    margin-top: 10px;
+    margin-left: 8%;
+    height: 40px;
+    img {
+      display: none;
+    }
+  }
+}
+
+.homeCard:hover {
+  border: 2px solid #3e8bff;
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeCard {
+    width: 370px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeCard {
+    width: 370px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeCard {
+    margin-top: 30px;
+    width: 45%;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,322 @@
+.homeHeader::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #010927;
+  opacity: 0.85;
+  z-index: -100;
+}
+
+.rec.rec-dot {
+  display: none;
+}
+.homeHeader {
+  width: 100%;
+  height: 85vh;
+  margin-bottom: 5%;
+  z-index: 200;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .homeHeader__all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color: #010927, $alpha: 0.75);
+    .fullScrennThing {
+      display: none;
+    }
+  }
+
+  .bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  .bgVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .homeHeader__container {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    .homeHeader__left {
+      width: 50%;
+      h4 {
+        width: 26px;
+        font-size: 10px;
+        padding: 5px;
+        background-color: black;
+      }
+      h1 {
+        font-family: "Reggae One", cursive;
+        font-size: 45px;
+        text-align: left;
+      }
+      p {
+        font-size: 17px;
+        width: 75%;
+        line-height: 22px;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .homeHeader__buttons {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        button {
+          text-align: left;
+          img {
+            display: none;
+          }
+        }
+        .learnButton {
+          background: none;
+        }
+      }
+      .header__rating {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        .stars {
+          p {
+            margin-bottom: 5px;
+          }
+          .MuiSvgIcon-root {
+            color: gray;
+            font-size: 18px;
+          }
+          h5 {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .crossPlatform {
+          width: 110px;
+          height: 30px;
+          background: #00114d;
+          margin-top: 15px;
+          border-radius: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid white;
+          color: white;
+          font-weight: normal;
+          transition: 0.4s linear;
+          h6 {
+            font-weight: normal;
+          }
+        }
+        .crossPlatform:hover {
+          cursor: pointer;
+          background: white;
+          color: #010927;
+        }
+      }
+    }
+    .homeHeader__right {
+      height: 320px;
+      width: 550px;
+      background-image: url(../../../Assets/homeHeaderImg.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 70px;
+        height: 70px;
+        border-radius: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00b8ff;
+        border: 1px solid #00114d;
+        transition: 0.3s linear;
+        outline: none;
+        .MuiSvgIcon-root {
+          font-size: 35px;
+          color: #00114d;
+          opacity: 0.8;
+        }
+      }
+      #pauseButton {
+        display: none;
+      }
+      button:hover {
+        border: 1px solid #00b8ff;
+        background-color: #00114d;
+        cursor: pointer;
+        .MuiSvgIcon-root {
+          color: #00b8ff;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeHeader {
+    width: 100%;
+    height: auto;
+
+    .homeHeader__container {
+      width: 100%;
+      flex-direction: column;
+      .homeHeader__right {
+        height: 210px;
+        width: 90%;
+        margin-bottom: 15%;
+        margin-top: 15%;
+      }
+      .homeHeader__left {
+        width: 90%;
+        margin: auto;
+        margin-top: 30%;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          width: 100%;
+        }
+        .homeHeader__buttons {
+          width: 100%;
+          margin-top: 20px;
+        }
+        .header__rating {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeHeader {
+    width: 100%;
+    height: auto;
+    .homeHeader__container {
+      width: 100%;
+      flex-direction: column;
+      .homeHeader__right {
+        .homeHeader__right {
+          height: 220px;
+          width: 350px;
+          margin-bottom: 10%;
+          margin-top: 2%;
+        }
+        img {
+          height: 350px;
+          width: 95%;
+          margin: auto;
+        }
+      }
+      .homeHeader__left {
+        width: 90%;
+        margin: auto;
+        margin-top: 30%;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          width: 100%;
+        }
+        .homeHeader__buttons {
+          // flex-direction: column;
+
+          margin-top: 20px;
+        }
+        .header__rating {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeHeader {
+    .homeHeader__container {
+      .homeHeader__right {
+        height: 220px;
+        width: 350px;
+        margin-bottom: 10%;
+        margin-top: 2%;
+      }
+      .homeHeader__left {
+        width: 60%;
+        margin-top: 10%;
+        p {
+          width: 90%;
+        }
+        .homeHeader__buttons {
+          width: 90%;
+        }
+        .header__rating {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeHeader {
+    .homeHeader__container {
+      .homeHeader__right {
+        height: 220px;
+        width: 350px;
+        img {
+          height: 220px;
+        }
+      }
+      .homeHeader__left {
+        width: 60%;
+        margin-top: 10%;
+        p {
+          width: 70%;
+        }
+        .homeHeader__buttons {
+          width: 60%;
+        }
+        .header__rating {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+  .homeHeader {
+    overflow-y: hidden;
+    top: -15px;
+    left: 0;
+  }
+}

@@ -1,0 +1,120 @@
+.apiBanner {
+  width: 100%;
+  height: 530px;
+  background-image: url(../../../Assets/apiBanner.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 320px;
+    line-height: 38px;
+    margin-left: 10%;
+  }
+  p {
+    width: 450px;
+    font-size: 15px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+  }
+  button {
+    margin-left: 10%;
+    img {
+      display: none;
+    }
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    background: #000000;
+    opacity: 0.85;
+    z-index: -100;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .apiBanner {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p {
+      width: 95%;
+      font-size: 14px;
+      text-align: center;
+      margin: 10px auto;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .apiBanner {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p {
+      width: 95%;
+      font-size: 14px;
+      text-align: center;
+      margin: 10px auto;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .apiBanner {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p {
+      width: 75%;
+      font-size: 14px;
+      text-align: center;
+      margin: 10px auto;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

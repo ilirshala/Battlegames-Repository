@@ -1,0 +1,178 @@
+.forumsContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 5%;
+  .forumsContainer__left {
+    width: 70%;
+    height: auto;
+    .forumsContainer__header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .forumsConHeader__input {
+        width: 48%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 5px;
+        .MuiSvgIcon-root {
+          color: gray;
+          margin: 0 15px;
+        }
+        input {
+          height: 35px;
+          border: none;
+          outline: none;
+          background: none;
+          flex: 1;
+          font-size: 14px;
+          color: gray;
+        }
+        input::placeholder {
+          color: gray;
+        }
+      }
+      .sortBy__others {
+        width: 80px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid lightgray;
+        color: gray;
+        border-radius: 5px;
+        .blueIcon {
+          color: blue;
+        }
+      }
+    }
+    .forumsContainer__row {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    button {
+      margin: 20px auto;
+      img {
+        display: none;
+      }
+    }
+  }
+  .forumsContainer__right {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .forumsContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    .forumsContainer__right {
+      display: none;
+    }
+    .forumsContainer__left {
+      width: 100%;
+      .forumsContainer__header {
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        .forumsConHeader__input {
+          width: 95%;
+          margin-bottom: 15px;
+        }
+      }
+      .forumsContainer__row {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .forumsContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    .forumsContainer__right {
+      display: none;
+    }
+    .forumsContainer__left {
+      width: 100%;
+      .forumsContainer__header {
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        .forumsConHeader__input {
+          width: 95%;
+          margin-bottom: 15px;
+        }
+      }
+      .forumsContainer__row {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .forumsContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    .forumsContainer__right {
+      display: none;
+    }
+    .forumsContainer__left {
+      width: 100%;
+      .forumsContainer__header {
+        width: 90%;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 50px;
+        .forumsConHeader__input {
+          width: 48%;
+          margin-bottom: 15px;
+        }
+      }
+      .forumsContainer__row {
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .forumsContainer {
+    .forumsContainer__left {
+      .forumsContainer__row {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

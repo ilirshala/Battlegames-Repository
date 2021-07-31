@@ -1,0 +1,71 @@
+.visualCard {
+  width: 100%;
+  height: 191px;
+  border-radius: 10px;
+  color: black;
+
+  margin-top: 35px;
+  transition: 0.3s linear;
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .line {
+    width: 25px;
+    height: 2px;
+    background-color: #3e8bff;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  span {
+    color: #3e8bff;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  &:hover {
+    background-color: #122558;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .visualCard {
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .visualCard {
+    h2 {
+      font-size: 17px;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

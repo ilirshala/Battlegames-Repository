@@ -1,0 +1,130 @@
+.aboutFourth {
+  width: 100%;
+  height: 40vh;
+  margin: auto;
+  margin-bottom: -1%;
+
+  .homeSecond__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: -2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .aboutFourth__row {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 16%;
+    .aboutFourth__col {
+      width: 20%;
+      height: auto;
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      hr {
+        width: 40px;
+        height: 3px;
+        border: none;
+        margin: 15px 0;
+        background: #3e8bff;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .aboutFourth {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 5%;
+    .aboutFourth__row {
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      margin: auto;
+      .aboutFourth__col {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutFourth {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 5%;
+    .aboutFourth__row {
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      margin: auto;
+      .aboutFourth__col {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .aboutFourth {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 5%;
+    .aboutFourth__row {
+      width: 100%;
+      text-align: center;
+      flex-wrap: wrap;
+      margin: auto;
+      .aboutFourth__col {
+        width: 45%;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

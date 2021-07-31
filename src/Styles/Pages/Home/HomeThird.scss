@@ -1,0 +1,241 @@
+.homeThird {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 8%;
+  .homeThird__line {
+    width: 73.52px;
+    height: 10px;
+    background-color: #00b8ff;
+    clip-path: polygon(11% 48%, 88% 47%, 100% 100%, 0% 100%);
+    margin: auto;
+    margin-top: -2%;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .homeThird__row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .homeThird__right {
+      width: 50%;
+      height: auto;
+      .homeThirdRight__header {
+        width: 100%;
+        height: 45px;
+        background: #181818;
+        background: -webkit-linear-gradient(bottom, #181818, #010101);
+        background: -moz-linear-gradient(bottom, #181818, #010101);
+        background: linear-gradient(to top, #181818, #010101);
+        border: 1px solid white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        align-items: center;
+        color: white;
+        h3 {
+          font-size: 14px;
+          font-weight: normal;
+          margin-left: 5%;
+        }
+      }
+      .homeThirdRight__col {
+        width: 100%;
+        height: 133px;
+        background-image: url(../../../Assets/blogRowBg1.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 3px;
+        display: flex;
+        align-items: center;
+        .img {
+          background-image: url(../../../Assets/blogRow1.webp);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          height: 100%;
+          color: white;
+        }
+        h4 {
+          color: #3e8bff;
+          padding-left: 0%;
+          font-size: 13px;
+          text-transform: uppercase;
+          padding-top: 15px;
+          margin-bottom: 10px;
+        }
+        .homeThirdCol__con {
+          width: 90%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: auto;
+          margin-top: 10px;
+          color: white;
+          padding-left: 5%;
+
+          h3 {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 5px;
+            width: 80%;
+            line-height: 20px;
+          }
+          button {
+            background: #181818;
+            background: -webkit-linear-gradient(bottom, #181818, #010101);
+            background: -moz-linear-gradient(bottom, #181818, #010101);
+            background: linear-gradient(to top, #181818, #010101);
+            border: 1px solid white;
+            width: 150px;
+            margin-top: 15px;
+            margin-right: 15px;
+          }
+        }
+      }
+      .col2 {
+        background-image: url(../../../Assets/blogRowBg2.webp);
+        .img {
+          background-image: url(../../../Assets/blogRow2.webp);
+        }
+      }
+      .col3 {
+        background-image: url(../../../Assets/blogRowBg3.webp);
+        .img {
+          background-image: url(../../../Assets/blogRow3.webp);
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .homeThird {
+    width: 90%;
+    height: auto;
+    margin-bottom: 100%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeThird__row {
+      width: 100%;
+      flex-direction: column;
+      .homeThird__right {
+        width: 100%;
+        margin-top: 20px;
+        .homeThirdRight__col {
+          width: 100%;
+          height: 350px;
+          flex-direction: column;
+          margin-top: 25px;
+          .img {
+            width: 100%;
+            height: 150px;
+          }
+          .homeThirdCol__con {
+            height: auto;
+            flex-direction: column;
+            button {
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .homeThird {
+    width: 90%;
+    height: auto;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeThird__row {
+      width: 100%;
+      flex-direction: column;
+      .homeThird__right {
+        width: 100%;
+        margin-top: 20px;
+        .homeThirdRight__col {
+          width: 100%;
+          height: 350px;
+          flex-direction: column;
+          margin-top: 25px;
+          .img {
+            width: 100%;
+            height: 150px;
+          }
+          .homeThirdCol__con {
+            height: auto;
+            flex-direction: column;
+            button {
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .homeThird {
+    width: 90%;
+    height: auto;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeThird__row {
+      width: 100%;
+      flex-direction: column;
+      .homeThird__right {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeThird {
+    width: 90%;
+    height: auto;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .homeThird__row {
+      width: 100%;
+      flex-direction: column;
+      .homeThird__right {
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

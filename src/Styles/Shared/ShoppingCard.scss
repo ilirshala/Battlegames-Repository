@@ -1,0 +1,80 @@
+.shoppingCard {
+  width: 350px;
+  height: 355px;
+  background-color: #d9d7d7;
+  transition: all 0.3s linear;
+  background-repeat: no-repeat;
+  background-image: url(../../Assets/shirt1.webp);
+  background-size: 80% 80%;
+  background-position: center;
+  position: relative;
+  color: white;
+  h3 {
+    position: relative;
+    padding-top: 60%;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    text-align: left;
+  }
+  h2 {
+    position: relative;
+    margin-left: 30px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    text-align: left;
+  }
+  .sizes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    .size {
+      width: 35px;
+      height: 35px;
+      border: 1px solid white;
+      background-color: #3d2f70;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      h4 {
+        font-weight: 500;
+      }
+    }
+  }
+}
+.shoppingCard::before {
+  content: "";
+  background-color: #3d2f70;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.shoppingCard:hover::before {
+  content: "";
+  background-color: #3d2f70;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+.shoppingCard:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  h3,
+  h2,
+  .sizes {
+    opacity: 1;
+  }
+}

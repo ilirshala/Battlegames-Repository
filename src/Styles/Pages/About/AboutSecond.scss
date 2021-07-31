@@ -1,0 +1,115 @@
+.aboutSecond {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 5%;
+  .aboutSecondLeft {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin-top: 70px;
+    hr {
+      width: 80px;
+      height: 25px;
+      border: none;
+      background-color: #00b8ff;
+      margin-left: 10%;
+      margin-top: 5%;
+      clip-path: polygon(13% 78%, 90% 78%, 100% 100%, 0% 100%);
+    }
+    h2 {
+      margin-top: 15px;
+      margin-left: 10%;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      width: 80%;
+      line-height: 22px;
+      margin-left: 10%;
+      margin-bottom: 30px;
+    }
+    button {
+      margin-left: 10%;
+      width: 40%;
+      img {
+        display: none;
+      }
+    }
+  }
+  .aboutSecondRight {
+    width: 50%;
+    height: 350px;
+    background-image: url(../../../Assets/aboutSecondImg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: -100;
+    margin-right: 10%;
+    margin-left: -10%;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .aboutSecond {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    .aboutSecondLeft {
+      width: 95%;
+      height: auto;
+      margin-bottom: 5%;
+    }
+    .aboutSecondRight {
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutSecond {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    .aboutSecondLeft {
+      width: 95%;
+      height: auto;
+      margin-bottom: 5%;
+    }
+    .aboutSecondRight {
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .aboutSecond {
+    width: 90%;
+    margin-bottom: 10%;
+    .aboutSecondLeft {
+      height: auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

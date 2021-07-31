@@ -1,0 +1,78 @@
+.footerApps {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .footer__app {
+    width: 100px;
+    height: 100px;
+    background-color: #080d1a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+    .app {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h5 {
+        font-weight: normal;
+        margin-top: 10px;
+      }
+    }
+  }
+  .footer__app:hover {
+    background: #707070;
+    cursor: pointer;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .footerApps {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .footer__app {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .footerApps {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .footer__app {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .footerApps {
+    width: 70%;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footerApps {
+    width: 60%;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

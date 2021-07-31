@@ -1,0 +1,235 @@
+.articleContainer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  background: #132658;
+  background: -webkit-linear-gradient(top, #132658, #132658);
+  background: -moz-linear-gradient(top, #132658, #132658);
+  background: linear-gradient(to bottom, #132658, #132658);
+  opacity: 0.98;
+  z-index: -100;
+}
+.articleContainer {
+  width: 100%;
+  height: auto;
+  background-image: url(../../../Assets/articleImg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 200;
+  padding-bottom: 5%;
+  .articleHeader {
+    width: 100%;
+    padding-top: 5%;
+
+    div {
+      height: 90px;
+      background: rgba($color: #000000, $alpha: 0.65);
+      color: white;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      h1 {
+        font-size: 33px;
+        font-weight: 600;
+      }
+    }
+  }
+  .articleLink {
+    width: 65%;
+    height: 30px;
+    position: relative;
+    top: 15%;
+    div {
+      width: 85%;
+      height: 100%;
+      margin: auto;
+      position: relative;
+      left: 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      p {
+        display: flex;
+        align-items: center;
+        color: white;
+        span {
+          color: #3e8bff;
+        }
+        .MuiSvgIcon-root {
+          margin: 0 10px;
+        }
+      }
+      #centerP {
+        margin-left: -5% !important;
+      }
+    }
+  }
+  .articleCon {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .articleContainer {
+    width: 100%;
+    height: auto;
+    .articleHeader {
+      padding-top: 25%;
+      div {
+        height: 70px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .articleLink {
+      width: 100%;
+      height: auto;
+      div {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        flex-direction: column;
+        left: 0;
+        p {
+          font-size: 14px;
+          margin: 15px auto;
+        }
+        #centerP {
+          margin-left: 7% !important;
+        }
+      }
+    }
+    .articleCon {
+      width: 95%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .articleContainer {
+    width: 100%;
+    height: auto;
+    .articleHeader {
+      padding-top: 25%;
+      div {
+        height: 70px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .articleLink {
+      width: 100%;
+      height: auto;
+      div {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        flex-direction: column;
+        left: 0;
+        p {
+          font-size: 14px;
+          margin: 15px auto;
+          justify-content: center;
+        }
+        #centerP {
+          margin-left: 22% !important;
+        }
+      }
+    }
+    .articleCon {
+      width: 95%;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .articleContainer {
+    width: 100%;
+    height: auto;
+    .articleHeader {
+      padding-top: 15%;
+      div {
+        height: 70px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .articleLink {
+      width: 100%;
+      height: auto;
+      div {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        flex-direction: row;
+        left: 0;
+        p {
+          font-size: 14px;
+          margin: 15px auto;
+          justify-content: space-between;
+        }
+        #centerP {
+          // margin-left: 22% !important;
+        }
+      }
+    }
+    .articleCon {
+      width: 95%;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .articleContainer {
+    width: 100%;
+    height: auto;
+    .articleHeader {
+      padding-top: 8%;
+      div {
+        height: 90px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .articleLink {
+      width: 100%;
+      height: auto;
+      div {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        flex-direction: row;
+        left: 0;
+        p {
+          font-size: 14px;
+          margin: 15px auto;
+          justify-content: space-between;
+        }
+        #centerP {
+          // margin-left: 22% !important;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

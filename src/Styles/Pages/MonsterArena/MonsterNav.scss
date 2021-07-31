@@ -1,0 +1,100 @@
+.monsterNav {
+  width: 100%;
+  height: 35px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0d1b40;
+  margin-bottom: 3%;
+  .monsterNav__list {
+    width: 60%;
+    height: auto;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    li {
+      width: 100;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 15px;
+      border-radius: 10px;
+      font-weight: 500;
+      color: white;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: 0.2s linear;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    li:hover {
+      cursor: pointer;
+      border: 1px solid white;
+    }
+  }
+  .monsterDownload {
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .monsterApps {
+      width: 100px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      div {
+        width: 35px;
+        height: 35px;
+        background: rgba($color: #fff, $alpha: 0.5);
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    button {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .monsterNav {
+    display: none;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .monsterNav {
+    display: none;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .monsterNav {
+    display: none;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}
